@@ -37,8 +37,31 @@ public final class Constants {
 	public static final int kTimeoutMs = 30;
 
     public static class Button{
-        public static final int arm_in = 1;
-        public static final int arm_out = 2;
+        //Xbox，我不太想把 driver station 帶去高雄，所以用Xbox代替
+        public static final int flywheelSpin = 1;      //飛輪啟用
+        public static final int conveyor = 2;          //送球
+        public static final int turretleft = 3;        //轉塔左
+        public static final int turretRight = 4;       //轉塔右
+        public static final int rack_up = 5;           //齒條上升
+        public static final int rack_down = 6;         //齒條下降
+        public static final int intake = 7;            //送球保險
+        public static final int autoaim = 8;           //自動瞄準
+        //可能會有按鈕錯，畢竟我沒去對Xbox
+
+        //Joystick
+        public static final int arm_in = 1;            //手臂進來
+        public static final int arm_out = 2;           //手臂出去
+        public static final int towerZero = 3;         //轉塔歸零
+        public static final int rackZero = 4;          //齒條歸零
+        public static final int emergency_shoot = 5;   //緊急發射
+        public static final int intake_opp = 6;        //進球反轉(包括送球三個馬達+吸球)
+        public static final int hanging_up = 7;        //吊掛上升
+        public static final int hanging_down = 8;      //吊掛下降
+    }
+
+    public static class Pne{
+        public static final int ArmDS_1 = 0;           //雙電磁閥腳位1
+        public static final int ArmDS_2 = 1;           //雙電磁閥腳位2
 
     }
 
